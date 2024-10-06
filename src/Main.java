@@ -87,10 +87,10 @@ public class Main {
         System.out.println("Задача 2 выполнена");
         System.out.println("[Задача 3]");
         int ludmilaStudent = 23;
-        int annaStudent = 27;
+        int annushkaStudent = 27;
         int katyStudent = 30;
         int sheetOfPaper = 480;
-        int sheetOfPaperResult = sheetOfPaper / (ludmilaStudent + katyStudent + annaStudent);
+        int sheetOfPaperResult = sheetOfPaper / (ludmilaStudent + katyStudent + annushkaStudent);
         System.out.println("На каждого ученика рассчитано " + sheetOfPaperResult + " листов бумаги");
         System.out.println("Задача 3 выполнена");
         System.out.println("[Задача 4]");
@@ -151,38 +151,104 @@ public class Main {
         System.out.println("До повышения зарплата Дениса в месяц " + denisSalary);
         int krisSalary = 76230;
         System.out.println("До повышения зарплата Кристины в месяц " + krisSalary);
-        int salaryIncreaseMasha = (mashaSalary*10)/100+mashaSalary;
+        int salaryIncreaseMasha = (mashaSalary * 10) / 100 + mashaSalary;
         System.out.println("После повышения Маша стала получать в месяц " + salaryIncreaseMasha);
-        int salaryIncreaseDenis = (denisSalary*10)/100+denisSalary;
+        int salaryIncreaseDenis = (denisSalary * 10) / 100 + denisSalary;
         System.out.println("После повышения Дениска стал получать в месяц " + salaryIncreaseDenis);
-        int salaryIncreaseKris = (krisSalary*10)/100+krisSalary;
+        int salaryIncreaseKris = (krisSalary * 10) / 100 + krisSalary;
         System.out.println("После повышения Кристина  стала получать в месяц " + salaryIncreaseKris);
-        int salaryMashaOfYear = mashaSalary*12;
+        int salaryMashaOfYear = mashaSalary * 12;
         System.out.println("До повышения Маша получала в год " + salaryMashaOfYear);
-        int salaryDenisOfYear = denisSalary*12;
+        int salaryDenisOfYear = denisSalary * 12;
         System.out.println("До повышения Денис получал в год " + salaryDenisOfYear);
-        int salaryKrisOfYear = krisSalary*12;
+        int salaryKrisOfYear = krisSalary * 12;
         System.out.println("До повышения Кристина получала в год " + salaryKrisOfYear);
-        int mashaSalaryOfYearLast = salaryIncreaseMasha*12;
-        System.out.println("После повышения за год Маша получает " + mashaSalaryOfYearLast );
-        int denisSalaryOfYearLast = salaryIncreaseDenis*12;
+        int mashaSalaryOfYearLast = salaryIncreaseMasha * 12;
+        System.out.println("После повышения за год Маша получает " + mashaSalaryOfYearLast);
+        int denisSalaryOfYearLast = salaryIncreaseDenis * 12;
         System.out.println("После повышения за год Денис получает " + denisSalaryOfYearLast);
-        int krisSalaryOfYearLast = salaryIncreaseKris*12;
+        int krisSalaryOfYearLast = salaryIncreaseKris * 12;
         System.out.println("После повышения за год Кристина получает " + krisSalaryOfYearLast);
-        int differenceMashaSalaryOfYear = mashaSalaryOfYearLast-salaryMashaOfYear;
-        System.out.println("Маша теперь получает " + salaryIncreaseMasha + " в месяяц, годовой доход вырос на " + differenceMashaSalaryOfYear );
-        int differenceDenisSalaryOfYear = denisSalaryOfYearLast-salaryDenisOfYear;
+        int differenceMashaSalaryOfYear = mashaSalaryOfYearLast - salaryMashaOfYear;
+        System.out.println("Маша теперь получает " + salaryIncreaseMasha + " в месяяц, годовой доход вырос на " + differenceMashaSalaryOfYear);
+        int differenceDenisSalaryOfYear = denisSalaryOfYearLast - salaryDenisOfYear;
         System.out.println("Денис теперь получает " + salaryIncreaseDenis + " в месяяц, годовой доход вырос на " + differenceDenisSalaryOfYear);
-        int differenceKrisSalaryOfYear = krisSalaryOfYearLast-salaryKrisOfYear;
+        int differenceKrisSalaryOfYear = krisSalaryOfYearLast - salaryKrisOfYear;
         System.out.println("Кристина теперь получает " + salaryIncreaseKris + " в месяц, годовой доход вырос на " + differenceKrisSalaryOfYear);
         System.out.println("Задача 8 выполнена");
 
+        System.out.println("[Тема условные операторы]");
+        System.out.println("[Задача 1]");
+        ConditionalOperators conditionalOperators = new ConditionalOperators();
+        System.out.println(conditionalOperators.printAgePeople(21));
+        System.out.println(conditionalOperators.printAgePeople(17));
+        System.out.println("Задача 1 выполнена");
+        System.out.println("Задача 1 другое решение");
+        conditionalOperators.printAgePeople1(18);
+        conditionalOperators.printAgePeople1(12);
+        System.out.println("Задача 1 выполнена");
+        System.out.println("[Задача 2]");
+        System.out.println(conditionalOperators.temperatureMessage(4));
+        String message = conditionalOperators.temperatureMessage(6);
+        System.out.println(message);
+        System.out.println("Задача 2 выполнена");
+        System.out.println("[Задача 3]");
+        System.out.println(conditionalOperators.getSpeedDriver());
+        conditionalOperators.speedDrivers();
+        System.out.println("Задача 3 выполнена");
+        System.out.println("[Задача 4]");
+        int age = 20;
+        if (age >= 3 && age < 7) {
+            System.out.println("Если человеку " + age + " лет, то ему нужно ходить в детский сад.");
+        } else if (age >= 7 && age < 18) {
+            System.out.println("Если человеку " + age + " лет, то ему нужно ходить в школу.");
+        } else if (age >= 18 && age <= 24) {
+            System.out.println("Если человеку " + age + " лет, то его место в университете.");
+        } else if (age > 24) {
+            System.out.println("Если человеку " + age + " лет, то ему пора ходить на работу.");
+        }
+        System.out.println("Задача 4 выполнена");
+        System.out.println("[Задача 5]");
+        int ageKind = 16;
+        if (ageKind < 5) {
+            System.out.println("Если ребенку " + ageKind + " лет, то он не может кататься на аттракционе");
+        }
+        if (ageKind >= 5 && ageKind <= 14) {
+            System.out.println("Если ребенку " + ageKind + " лет он может кататься только в сопровождении взрослого");
+        }
+        if (ageKind > 14) {
+            System.out.println("Если ребенку " + ageKind + " лет, можно без взрослого");
+        }
+        System.out.println("Задача 5 выполнена");
+        System.out.println("[Задача 6]");
+        int totalPlaces = 102;
+        int seats = 60;
+        int passenger = 40;
+        if (passenger < seats) {
+            System.out.println("Есть сидячие места в вагоне.");
+        } else if (passenger >= seats && passenger < totalPlaces) {
+            System.out.println("Есть стоячие места в вагоне.");
+        } else {
+            System.out.println("Вагон полностью забит, мест нет.");
+        }
+        System.out.println("Задача 6 выполнена");
+        System.out.println("[Задача 7]");
+        int one =24;
+        int two = 24;
+        int three = 24;
+        if (one > two && one > three) {
+            System.out.println("one большее из чисел");
+        } else if (two > one && two > three) {
+            System.out.println("two большее");
+        } else if (three > one && three > two) {
+            System.out.println("большее three");
+        } else {
+            System.out.println("Существет равенство между числами");
+        }
 
-
-
-
-
-
-
+        System.out.println("Задача 7 выполнена");
     }
+
+
 }
+
