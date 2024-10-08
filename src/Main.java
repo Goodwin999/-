@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+import java.util.function.DoubleToIntFunction;
 
 public class Main {
     public static void main(String[] args) {
@@ -233,7 +235,7 @@ public class Main {
         }
         System.out.println("Задача 6 выполнена");
         System.out.println("[Задача 7]");
-        int one =24;
+        int one = 24;
         int two = 24;
         int three = 24;
         if (one > two && one > three) {
@@ -247,8 +249,108 @@ public class Main {
         }
 
         System.out.println("Задача 7 выполнена");
+        System.out.println("[Условные операторы ч.2]");
+        System.out.println("[Задача из лекции]");
+        char color = 'y';
+        switch (color) {
+            case 'r' -> System.out.println("Красный, иди нахуй");
+            case 'y' -> System.out.println("Желтый, приготовиться");
+            case 'g' -> System.out.println("Пиздуй бороздуй, и я попиздел нахуй");
+            case 'l' -> System.out.println("Поверни налево ебантяй");
+            default -> System.out.println("Светофору пизда, можно ехать как араб");
+        }
+
+        conditionalOperators.switchCaseExample('r');
+        conditionalOperators.switchCaseExample1('l');
+        System.out.println("Задача из лекции выполнена");
+        System.out.println("[Задача 1]");
+        int clientOS = 0;
+        switch (clientOS) {
+            case 0 -> System.out.println("Установите версию приложения для iOS по ссылке");
+            case 1 -> System.out.println("Установите версию приложения для Android по ссылке");
+            default -> System.out.println("Не определен тип ОС");
+        }
+        int clientOSS = 1;
+        if (clientOSS == 1) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        } else {
+            if (clientOSS == 0) {
+                System.out.println("Установите версию приложения для iOS по ссылке");
+            } else {
+                System.out.println("Не определен тип ОС");
+            }
+        }
+        int clientOC = 1;
+        if (clientOC == 1) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        } else if (clientOC == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else {
+            System.out.println("Не определен тип ОС");
+        }
+
+        System.out.println("Задача 1 выполнена");
+        System.out.println("[Задача 2]");
+        int clientOCC = 1;
+        int yearOfCreation = 2014;
+        if (clientOCC == 1 && yearOfCreation >= 2015) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        } else {
+            if (clientOCC == 1 && yearOfCreation < 2015) {
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            } else {
+                if (clientOCC == 0 && yearOfCreation >= 2015) {
+                    System.out.println("Установите версию приложения для iOS по ссылке");
+                } else {
+                    if (clientOCC == 0 && yearOfCreation < 2015) {
+                        System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+                    }
+                }
+            }
+        }
+        System.out.println("Задача 2 выполнена");
+        System.out.println("[Задача 3]");
+        int year = 2021;
+        if ((year > 1584) && (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год является не високосным");
+        }
+        System.out.println("Задача 3 выполнена");
+        System.out.println("[Задача 4]");
+        int deliveryDistance = 95;
+        if (deliveryDistance <= 20) {
+            System.out.println("Потребуется для доставки 1 день");
+        } else {
+            if (deliveryDistance > 20 && deliveryDistance <= 60) {
+                System.out.println("Потребуется дляя доставки 2 дня");
+            } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+                System.out.println("Потребуется для доставки 3 дня");
+            } else if (deliveryDistance > 100) {
+                System.out.println("Доставки нет, соси хуй собака");
+            }
+        }
+        System.out.println("Задача 4 выполнена");
+        System.out.println("[Задача 5]");
+        int monthNumber = 12;
+        switch (monthNumber) {
+            case 1 -> System.out.println("Январь, зима");
+            case 2 -> System.out.println("Февраль, зима");
+            case 3 -> System.out.println("Март, весна");
+            case 4 -> System.out.println("Апрель. весна");
+            case 5 -> System.out.println("Май, весна");
+            case 6 -> System.out.println("Июнь, лето");
+            case 7 -> System.out.println("Июль,лето");
+            case 8 -> System.out.println("Август, лето");
+            case 9 -> System.out.println("Сентябр, осень");
+            case 10 -> System.out.println("Октябрь, осень");
+            case 11 -> System.out.println("Ноябрь, осень");
+            case 12 -> System.out.println("Декабрь, зима");
+            default -> System.out.println("Месяц больше 12");
+        }
+        System.out.println("Задача 5 выполнена");
+        System.out.println("Условные операторы ч.2 выполнил все задачи");
+
     }
-
-
 }
 
