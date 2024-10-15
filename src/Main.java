@@ -350,6 +350,38 @@ public class Main {
         }
         System.out.println("Задача 5 выполнена");
         System.out.println("Условные операторы ч.2 выполнил все задачи");
+        System.out.println("[Циклы]");
+        System.out.println("[Задача 1]");
+        Cycles cycles = new Cycles();
+        cycles.printIntegers();
+        System.out.println("Задача 1 выполнена");
+        System.out.println("[Задача 2]");
+        cycles.printIntegers1();
+        System.out.println("Задача 2 выполнена");
+        System.out.println("[Задача 3]");
+        cycles.printIntegers2();
+        System.out.println("Задача 3 выполнена");
+        System.out.println("[Задача 4]");
+        cycles.printIntegers3();
+        System.out.println("Задача 4 выполнена");
+        System.out.println("[Задача 5]");
+        cycles.countLeapYear();
+        System.out.println("Задача 5 выполнена");
+        System.out.println("[Задача 6]");
+        cycles.printNumbersSequentially();
+        System.out.println("Задача 6 выполнена");
+        System.out.println("[Задача 7]");
+        cycles.printNumbersSequentially1();
+        System.out.println("Задача 7 выполнена");
+        System.out.println("[Задача 8]");
+        cycles.countTheSum();
+        System.out.println("Задача 8 выполнена");
+        System.out.println("[Задача 9]");
+        cycles.countTheSum1();
+        System.out.println("Задача 9 выполнена");
+        System.out.println("[Задача 10]");
+        cycles.multiplicationTable();
+        System.out.println("Задача 10 выполнена");
 
     }
 }

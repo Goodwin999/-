@@ -28,9 +28,10 @@ public class ConditionalOperators {
         }
     }
 
-    int speedDriver = 50;
 
     public String getSpeedDriver() {
+        int speedDriver = 50;
+
         if (speedDriver > 60) {
             return "Если скорость " + speedDriver + " то придется заплатить штраф";
         } else {
@@ -38,10 +39,10 @@ public class ConditionalOperators {
         }
     }
 
-    int speed = 180;
-    int speed1 = 59;
 
     public void speedDrivers() {
+        int speed = 180;
+        int speed1 = 59;
 
         if (speed > 60) {
             System.out.println("Не спеши ебанат");
