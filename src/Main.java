@@ -382,6 +382,45 @@ public class Main {
         System.out.println("[Задача 10]");
         cycles.multiplicationTable();
         System.out.println("Задача 10 выполнена");
+        System.out.println("[Циклы ч. 2]");
+
+        int salary = 65535;
+        int total = 0;
+        for (int w = 0; total < 1_000_000; w++) {
+            total = total + total / 100;
+            total = total + salary;
+            if (w % 5 == 0) {
+                System.out.println("Месяц " + w + " Итого " + total);
+            }
+        }
+        System.out.println(total);
+        System.out.println("[Задача 1]");
+        cycles.countTheSum2();
+        System.out.println("Задача 1 выполнена");
+        System.out.println("[Задача 2]");
+        cycles.printNumber();
+        System.out.println();
+        System.out.println("Задача 2 выполнена");
+        System.out.println("[Задача 3]");
+        cycles.calculatePopulation();
+        System.out.println("Решение с помощью цикла FOR");
+        cycles.calculatePopulationTwo();
+        System.out.println("Задача 3 выполнена");
+        System.out.println("[Задача 4]");
+        cycles.countSavings();
+        System.out.println("Задача 4 выполнена");
+        System.out.println("[Задача 5]");
+        cycles.countSavingsTwo();
+        System.out.println("Задача 5 выполнена");
+        System.out.println("[Задача 6]");
+        cycles.countSavingsThree();
+        System.out.println("Задача 6 выполнена");
+        System.out.println("[Задача 7]");
+        cycles.calculateDaysOfTheMonth();
+        System.out.println("Задача 7 выполнена");
+        System.out.println("[Задача 8]");
+        cycles.calculateCometYears();
+        System.out.println("Задача 8 выполнена");
 
     }
 }
