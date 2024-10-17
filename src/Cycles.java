@@ -192,7 +192,7 @@ public class Cycles {
         int endYear = currentYear + 100;
         int cometInterval = 79;
         for (int year = 0; year <= endYear; year += cometInterval) {
-            if (year >= startYear && year <= endYear) {
+            if (year >= startYear) {
                 System.out.println(year);
             }
         }
