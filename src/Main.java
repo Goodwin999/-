@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-import java.util.function.DoubleToIntFunction;
 
 public class Main {
     public static void main(String[] args) {
@@ -421,6 +419,24 @@ public class Main {
         System.out.println("[Задача 8]");
         cycles.calculateCometYears();
         System.out.println("Задача 8 выполнена");
+        System.out.println("[Массивы ч. 1]");
+        ArraysExample arraysExample = new ArraysExample();
+        System.out.println("[Задача 1]");
+        arraysExample.createArrays();
+        System.out.println("Задача 1 выполнена");
+        System.out.println("[Задача 2]");
+        System.out.println("Задача 2 выполнена");
+        System.out.println("[Задача 3]");
+        arraysExample.printArr();
+        System.out.println();
+        arraysExample.printArrBack();
+        System.out.println("Задача 3 выполнена");
+        System.out.println("[Задача 4]");
+        arraysExample.printArraysNum();
+        System.out.println("Массивы  ч. 1 выполнена");
+
+
+
 
     }
 }
