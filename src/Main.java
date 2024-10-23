@@ -433,7 +433,21 @@ public class Main {
         System.out.println("Задача 3 выполнена");
         System.out.println("[Задача 4]");
         arraysExample.printArraysNum();
+        System.out.println();
         System.out.println("Массивы  ч. 1 выполнена");
+        System.out.println("[Массивы ч. 2]");
+        System.out.println("[Задача 1]");
+        arraysExample.countTheSum();
+        System.out.println("Задача 1 выполнена");
+        System.out.println("[Задача 2]");
+        arraysExample.countMinMaxSum();
+        System.out.println("Задача 2 выполнена");
+        System.out.println("[Задача 3]");
+        arraysExample.calculationOfAverageAmount();
+        System.out.println("Задача 3 выполнена");
+        System.out.println("[Задача 4]");
+        arraysExample.expandArray();
+        System.out.println("Массивы  ч. 2 выполнена");
 
 
 

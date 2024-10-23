@@ -49,15 +49,71 @@ public class ArraysExample {
     }
 
     public void printArraysNum() {
-        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8 ,9, 10, 11, 12, 13, 13};
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 13};
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 != 0) {
                 arr[i] = arr[i] + 1;
             }
         }
-        for (int i = 0; i < arr.length; i++) {
-                System.out.print(arr[i] + " ");
+        for (int j : arr) {
+            System.out.print(j + " ");
+        }
+    }
+
+    public void countTheSum() {
+        int[] payments = {22500, 25600, 23000, 27900, 23400};
+        int sum = 0;
+        for (int payment : payments) {
+            sum = sum + payment;
+        }
+        {
+            System.out.println("Сумма трат за месяц составила " + sum + " рублей");
+        }
+    }
+
+    public void countMinMaxSum() {
+        int[] payments = {10000, 20000, 45000, 34000, 23400};
+        int max = -1;
+        int min = 50000;
+        for (int payment : payments) {
+            if (payment > max) {
+                max = max + payment;
+            }
+            if (payment < min) {
+                min = payment;
+            }
+        }
+        System.out.println("Максимальная сумма трат за неделю составила " + max + " рублей");
+        System.out.println("Максимальная сумма трат за неделю составила " + min + " рублей");
+    }
+
+    public void calculationOfAverageAmount() {
+        int[] cost = {20000, 50000, 25000, 54000, 43400};
+        double totalCost = 0;
+        double count = cost.length;
+        for (double j : cost) {
+            totalCost = totalCost + j;
+        }
+        totalCost = totalCost / count;
+        {
+            System.out.println("Средняя сумма трат за месяц составила " + totalCost + " рублей");
+        }
+
+    }
+
+    public void expandArray() {
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.println(reverseFullName[i]);
+            } else {
+                System.out.print(reverseFullName[i]);
             }
         }
     }
+
+
+
+
+}
 
