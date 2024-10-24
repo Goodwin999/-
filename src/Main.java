@@ -2,7 +2,6 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-
         Variable variable = new Variable();
         System.out.println(variable.printResult());
         variable.printResult1();
@@ -176,7 +175,6 @@ public class Main {
         int differenceKrisSalaryOfYear = krisSalaryOfYearLast - salaryKrisOfYear;
         System.out.println("Кристина теперь получает " + salaryIncreaseKris + " в месяц, годовой доход вырос на " + differenceKrisSalaryOfYear);
         System.out.println("Задача 8 выполнена");
-
         System.out.println("[Тема условные операторы]");
         System.out.println("[Задача 1]");
         ConditionalOperators conditionalOperators = new ConditionalOperators();
@@ -245,7 +243,6 @@ public class Main {
         } else {
             System.out.println("Существет равенство между числами");
         }
-
         System.out.println("Задача 7 выполнена");
         System.out.println("[Условные операторы ч.2]");
         System.out.println("[Задача из лекции]");
@@ -257,7 +254,6 @@ public class Main {
             case 'l' -> System.out.println("Поверни налево ебантяй");
             default -> System.out.println("Светофору пизда, можно ехать как араб");
         }
-
         conditionalOperators.switchCaseExample('r');
         conditionalOperators.switchCaseExample1('l');
         System.out.println("Задача из лекции выполнена");
@@ -286,7 +282,6 @@ public class Main {
         } else {
             System.out.println("Не определен тип ОС");
         }
-
         System.out.println("Задача 1 выполнена");
         System.out.println("[Задача 2]");
         int clientOCC = 1;
@@ -381,7 +376,6 @@ public class Main {
         cycles.multiplicationTable();
         System.out.println("Задача 10 выполнена");
         System.out.println("[Циклы ч. 2]");
-
         int salary = 65535;
         int total = 0;
         for (int w = 0; total < 1_000_000; w++) {
@@ -448,9 +442,22 @@ public class Main {
         System.out.println("[Задача 4]");
         arraysExample.expandArray();
         System.out.println("Массивы  ч. 2 выполнена");
-
-
-
+        System.out.println("[Строки]");
+        StringExample string = new StringExample();
+        string.printString();
+        String street1 = "манежная";
+        String streetTrue = street1.replace("м", "М");
+        System.out.println(streetTrue);
+        System.out.println("[Задача 1]");
+        string.printStringName();
+        System.out.println("Задача 1 выполнена");
+        System.out.println("[Задача 2]");
+        string.printStringNameUpperCase();
+        System.out.println("Задача 2 выполнена");
+        System.out.println("[Задача 3]");
+        string.printStringReplaceSymbol();
+        System.out.println("Задача 3 выполнена");
+        System.out.println("Строки выполнил");
 
     }
 }
