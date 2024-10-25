@@ -458,6 +458,19 @@ public class Main {
         string.printStringReplaceSymbol();
         System.out.println("Задача 3 выполнена");
         System.out.println("Строки выполнил");
+        System.out.println("[Методы]");
+        System.out.println("[Задача 1]");
+        MyMethod myMethod = new MyMethod();
+        myMethod.checkOfLeapYear(2021);
+        System.out.println("Задача 1 выполнена");
+        System.out.println("[Задача 2]");
+        myMethod.checkOS(0, 2014);
+        System.out.println("Задача 2 выполнена");
+        System.out.println("[Задача 3]");
+        myMethod.checkDeliveryDays(95);
+        System.out.println("Задача 3 выполнена");
+        System.out.println("Методы выполнил  ");
+
 
     }
 }
