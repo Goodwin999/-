@@ -1,3 +1,5 @@
+import objectAndClass.Author;
+import objectAndClass.Book;
 
 public class Main {
     public static void main(String[] args) {
@@ -469,9 +471,13 @@ public class Main {
         System.out.println("[Задача 3]");
         myMethod.checkDeliveryDays(95);
         System.out.println("Задача 3 выполнена");
-        System.out.println("Методы выполнил  ");
-
-
+        System.out.println("Методы выполнил");
+        System.out.println("[Объекты и классы]");
+        Author author = new Author("Михаил", "Булгаков");
+        Book book = new Book("Мвстер и Маргарита", author,  1940);
+        System.out.println(book);
+        System.out.println(author);
+        System.out.println("Объекты и классы прошел");
     }
 }
 
