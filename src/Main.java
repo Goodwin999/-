@@ -478,6 +478,9 @@ public class Main {
         System.out.println(book);
         System.out.println(author);
         System.out.println("Объекты и классы прошел");
+        Author authorPushkin = new Author("Александр", "Пушкин");
+        System.out.println(authorPushkin);
+        System.out.println("Методы объектов");
     }
 }
 
