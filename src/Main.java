@@ -1,6 +1,8 @@
 import objectAndClass.Author;
 import objectAndClass.Book;
 
+import java.nio.file.attribute.AttributeView;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -473,14 +475,19 @@ public class Main {
         System.out.println("Задача 3 выполнена");
         System.out.println("Методы выполнил");
         System.out.println("[Объекты и классы]");
-        Author author = new Author("Михаил", "Булгаков");
-        Book book = new Book("Мвстер и Маргарита", author,  1940);
-        System.out.println(book);
-        System.out.println(author);
-        System.out.println("Объекты и классы прошел");
+        Author mikhailBulgakov = new Author("Михаил", "Булгаков");
+        Book masterAndMergarita = new Book("Мастер и Маргарита", mikhailBulgakov, 1940);
+        System.out.println(masterAndMergarita);
+        System.out.println(mikhailBulgakov);
         Author authorPushkin = new Author("Александр", "Пушкин");
         System.out.println(authorPushkin);
-        System.out.println("Методы объектов");
+        Author tolstoy = new Author("Лев", "Толстой");
+        Book warAndPeace = new Book("Война и мир",  tolstoy,  1869);
+        System.out.println(warAndPeace);
+        System.out.println("Объекты и классы прошел");
+        System.out.println("[Методы объектов]");
+
+
     }
 }
 
