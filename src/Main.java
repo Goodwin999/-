@@ -482,10 +482,12 @@ public class Main {
         Author authorPushkin = new Author("Александр", "Пушкин");
         System.out.println(authorPushkin);
         Author tolstoy = new Author("Лев", "Толстой");
+        System.out.println(tolstoy);
         Book warAndPeace = new Book("Война и мир",  tolstoy,  1869);
         System.out.println(warAndPeace);
         System.out.println("Объекты и классы прошел");
         System.out.println("[Методы объектов]");
+        System.out.println("Методы объектов прошел");
 
 
     }
