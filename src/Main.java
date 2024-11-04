@@ -1,7 +1,8 @@
 import objectAndClass.Author;
 import objectAndClass.Book;
+import objectAndClass.Person;
 
-import java.nio.file.attribute.AttributeView;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -483,13 +484,51 @@ public class Main {
         System.out.println(authorPushkin);
         Author tolstoy = new Author("Лев", "Толстой");
         System.out.println(tolstoy);
-        Book warAndPeace = new Book("Война и мир",  tolstoy,  1869);
+        Book warAndPeace = new Book("Война и мир", tolstoy, 1869);
         System.out.println(warAndPeace);
         System.out.println("Объекты и классы прошел");
         System.out.println("[Методы объектов]");
         System.out.println("Методы объектов прошел");
-
-
+        System.out.println("[Память в джава]");
+        System.out.println("[Задача 1]");
+        MemoryInJavaExample memory = new MemoryInJavaExample();
+        int value = 33;
+        System.out.println("Значение до вызова метода changeValue: " + value);
+        memory.changeValue(value);
+        System.out.println("Значение после вызова метода changeValue: " + value);
+        System.out.println("Задача 1 выполнена");
+        System.out.println("[Задача 2]");
+        Integer value1 = 33;
+        System.out.println("Значение до вызова метода changeValue1: " + value1);
+        memory.changeValue1(value1);
+        System.out.println("Значение после вызова метода changeValue1: " + value1);
+        System.out.println("Задача 2 выполнена");
+        System.out.println("[Задача 3]");
+        Integer[] value2 = {3, 4};
+        System.out.println("Значение до вызова метода changeValue2: " + Arrays.toString(value2));
+        memory.changeValue2(value2);
+        System.out.println("Значение после вызова метода changeValue2: " + Arrays.toString(value2));
+        System.out.println("Задача 3 выполнена");
+        System.out.println("[Задача 4]");
+        Integer[] value3 = {3, 4};
+        System.out.println("Значение до вызова метода changeValue3: " + Arrays.toString(value3));
+        memory.changeValue3(value3);
+        System.out.println("Значение после вызова метода changeValue3: " + Arrays.toString(value3));
+        System.out.println("Задача 4 выполнена");
+        System.out.println("[Задача 5]");
+        Person person = new Person("Lyapis", "Trubetskoy");
+        System.out.println("Значение до вызова метода changePerson " + person);
+        Person.changePerson(person);
+        System.out.println("Значение после вызова метода changePerson " + person);
+        System.out.println("Задача 5 выполнена");
+        System.out.println("[Задача 6]");
+        Person persons = new Person("Lyapis", "Trubetskoy");
+        System.out.println("Значение до вызова метода changePerson " + persons);
+        Person.changePerson(persons);
+        System.out.println("Значение после вызова метода changePerson " + persons);
+        System.out.println("Задача 6 выполнена");
+        System.out.println("Память в джава прошел");
     }
+
 }
 
