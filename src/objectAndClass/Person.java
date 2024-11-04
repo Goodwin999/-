@@ -18,7 +18,7 @@ public class Person {
     public void setSurname(String surname) {
         this.surname = surname;
     }
-public static void changePerson (Person person) {
+public void changePerson (Person person) {
         person.setName("Ilya");
         person.setSurname("Lagutenko");
     System.out.println("Значение внутри метода changePerson: " + person);

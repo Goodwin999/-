@@ -518,13 +518,13 @@ public class Main {
         System.out.println("[Задача 5]");
         Person person = new Person("Lyapis", "Trubetskoy");
         System.out.println("Значение до вызова метода changePerson " + person);
-        Person.changePerson(person);
+        person.changePerson(person);
         System.out.println("Значение после вызова метода changePerson " + person);
         System.out.println("Задача 5 выполнена");
         System.out.println("[Задача 6]");
         Person persons = new Person("Lyapis", "Trubetskoy");
         System.out.println("Значение до вызова метода changePerson " + persons);
-        Person.changePerson(persons);
+        person.changePerson(persons);
         System.out.println("Значение после вызова метода changePerson " + persons);
         System.out.println("Задача 6 выполнена");
         System.out.println("Память в джава прошел");
