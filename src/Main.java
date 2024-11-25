@@ -538,6 +538,14 @@ public class Main {
         System.out.println("Работа с исключениями");
         ExceptionMyExample exceptionMyExample = new ExceptionMyExample();
         exceptionMyExample.divide(10, 0);
+        String str = null;
+        String str1 = "Хуй";
+        exceptionMyExample.nullPointerExceptionExample(str);
+        exceptionMyExample.nullPointerExceptionExampleTwo(str1);
+        System.out.println("Выход за пределы массива(Исключения)");
+        int[]numbers = {1,2,3};
+        exceptionMyExample.printExceptionExample(numbers);
+
 
 
     }
