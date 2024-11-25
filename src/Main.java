@@ -3,6 +3,7 @@ import objectAndClass.Book;
 import objectAndClass.Person;
 
 import java.util.Arrays;
+import java.lang.ArithmeticException;
 
 public class Main {
     public static void main(String[] args) {
@@ -82,8 +83,8 @@ public class Main {
         System.out.println("Значение переменной с типом int равно " + c);
         long d = 4000000;
         System.out.println("Значение переменной с типом long  равно " + d);
-        float e = 5.0000099f;
-        System.out.println("Значение переменной с типом float равно " + e);
+        float u = 5.0000099f;
+        System.out.println("Значение переменной с типом float равно " + u);
         double i = 6.5234649;
         System.out.println("Значение переменной с типом double равно " + i);
         System.out.println("Задача 1 выполнена");
@@ -531,7 +532,12 @@ public class Main {
         System.out.println("Пример работы тернарного оператора");
         TernaryOperatorExample ternaryOperatorExample = new TernaryOperatorExample();
         ternaryOperatorExample.printResultWorkOfTernaryOperator(17);
-
+        ternaryOperatorExample.printResultWorkOfTernaryOperator(21);
+        ternaryOperatorExample.printResultWorkOfTernaryOperator(22);
+        System.out.println("Тернарный оператор повторил");
+        System.out.println("Работа с исключениями");
+        ExceptionMyExample exceptionMyExample = new ExceptionMyExample();
+        exceptionMyExample.divide(10, 0);
 
 
     }
