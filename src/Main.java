@@ -528,6 +528,12 @@ public class Main {
         System.out.println("Значение после вызова метода changePerson " + persons);
         System.out.println("Задача 6 выполнена");
         System.out.println("Память в джава прошел");
+        System.out.println("Пример работы тернарного оператора");
+        TernaryOperatorExample ternaryOperatorExample = new TernaryOperatorExample();
+        ternaryOperatorExample.printResultWorkOfTernaryOperator(17);
+
+
+
     }
 
 }
