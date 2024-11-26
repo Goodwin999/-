@@ -555,6 +555,7 @@ public class Main {
         } catch (ArithmeticException e) {
             System.out.println("Ошибка: " + e.getMessage());
         }
+        System.out.println("Просто полная ебанина");
 
 
     }
