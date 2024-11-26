@@ -18,7 +18,6 @@ public class ExceptionMyExample {
         } catch (NullPointerException e) {
             System.out.println("Ошибка: Строка str равна null");
         }
-
     }
 
     public void nullPointerExceptionExampleTwo(String str1) {
@@ -30,12 +29,18 @@ public class ExceptionMyExample {
         }
     }
 
-    public void printExceptionExample(int [] numbers) {
-        try {
-            System.out.println(numbers[10]);
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Ошибка: Индекс массива вне допустимого диапазона");
+    public void printExceptionExample(int[] numbers) throws ArrayIndexOutOfBoundsException {
+        System.out.println(numbers[10]);
+    }
+
+    public int printDivide(int a, int b) {
+        if (b == 0) {
+            throw new ArithmeticException("На ноль делить недопустимо");
         }
+        return a / b;
+
 
     }
+
+
 }

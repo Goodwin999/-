@@ -543,9 +543,18 @@ public class Main {
         exceptionMyExample.nullPointerExceptionExample(str);
         exceptionMyExample.nullPointerExceptionExampleTwo(str1);
         System.out.println("Выход за пределы массива(Исключения)");
-        int[]numbers = {1,2,3};
-        exceptionMyExample.printExceptionExample(numbers);
-
+        int[] numbers = {1, 2, 3};
+        try {
+            exceptionMyExample.printExceptionExample(numbers);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Ошибка: Индекс за пределами массива!");
+        }
+        System.out.println("Другой вариант деления");
+        try {
+            int result = exceptionMyExample.printDivide(10, 0);
+        } catch (ArithmeticException e) {
+            System.out.println("Ошибка: " + e.getMessage());
+        }
 
 
     }
